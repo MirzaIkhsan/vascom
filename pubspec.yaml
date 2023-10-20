@@ -9,11 +9,23 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  get: ^4.6.6
 
 dev_dependencies:
+  flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/svgs/
+
+  fonts:
+    - family: Gilroy
+      fonts:
+        - asset: assets/fonts/gilroy/Gilroy-ExtraBold.otf
+        - asset: assets/fonts/gilroy/Gilroy-Light.otf
+    - family: ProximaNova
+      fonts:
+        - asset: assets/fonts/proxima_nova/ProximaNova.otf
