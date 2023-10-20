@@ -11,6 +11,62 @@ abstract class TextUtils {
 class _ProximaNovaStyle {
   static const _fontFamily = "ProximaNova";
 
+  TextStyle get normal14FrenchGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 14,
+        color: ColorUtils.frenchGrey,
+        fontWeight: FontWeight.w400,
+      );
+
+  TextStyle get medium14FrenchGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 14,
+        color: ColorUtils.frenchGrey,
+        fontWeight: FontWeight.w500,
+      );
+
+  TextStyle get semiBold14FrenchGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 14,
+        color: ColorUtils.frenchGrey,
+        fontWeight: FontWeight.w600,
+      );
+
+  TextStyle get bold14FrenchGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 14,
+        color: ColorUtils.frenchGrey,
+        fontWeight: FontWeight.w700,
+      );
+
+      TextStyle get normal14DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 14,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w400,
+      );
+
+  TextStyle get medium14DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 14,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w500,
+      );
+
+  TextStyle get semiBold14DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 14,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w600,
+      );
+
+  TextStyle get bold14DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 14,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w700,
+      );
+
   TextStyle get normal12PaleBlue => const TextStyle(
         fontFamily: _fontFamily,
         fontSize: 12,
