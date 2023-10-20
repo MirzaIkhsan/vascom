@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vascom/pages/register/login_controller.dart';
+import 'package:vascom/pages/login/login_controller.dart';
 import 'package:vascom/utils/validator.utils.dart';
 import 'package:vascom/widgets/default_text_form_field.dart';
 

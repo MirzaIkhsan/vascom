@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:vascom/pages/register/login_controller.dart';
-import 'package:vascom/pages/register/widget/already_have_account.dart';
-import 'package:vascom/pages/register/widget/form_login.dart';
-import 'package:vascom/pages/register/widget/greeting_text.dart';
+import 'package:vascom/pages/login/login_controller.dart';
+import 'package:vascom/pages/login/widget/already_have_account.dart';
+import 'package:vascom/pages/login/widget/form_login.dart';
+import 'package:vascom/pages/login/widget/greeting_text.dart';
 import 'package:vascom/utils/text.utils.dart';
 import 'package:vascom/widgets/default_button.dart';
 import 'package:vascom/widgets/default_scaffold.dart';
