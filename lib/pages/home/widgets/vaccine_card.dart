@@ -11,7 +11,7 @@ class VaccineCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultFeaturedCard(
       asset: "assets/svgs/vaccine.svg",
-      assetAlignment: const Alignment(-0.25, -1.8),
+      assetAlignment: const Alignment(-0.25, -1.2),
       assetSize: const Size(120, 120),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

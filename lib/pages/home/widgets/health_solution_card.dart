@@ -10,7 +10,7 @@ class HealthSolutionCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultFeaturedCard(
       asset: "assets/svgs/schedule.svg",
-      assetAlignment: const Alignment(-0.1, -8),
+      assetAlignment: const Alignment(-0.1, -2.5),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

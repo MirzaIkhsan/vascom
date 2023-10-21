@@ -15,7 +15,7 @@ class HorizontalCardSlider extends StatelessWidget {
     final pageController = PageController();
 
     return SizedBox(
-      height: height ?? 160,
+      height: height ?? 180,
       child: PageView(
         controller: pageController,
         physics: const BouncingScrollPhysics(),
