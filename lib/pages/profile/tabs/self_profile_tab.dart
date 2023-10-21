@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vascom/pages/profile/profile_controller.dart';
 import 'package:vascom/pages/profile/widgets/form_profile.dart';
 import 'package:vascom/pages/profile/widgets/info_form_profile.dart';
 import 'package:vascom/pages/profile/widgets/profile_info_container.dart';
@@ -11,6 +12,8 @@ class SelfProfileTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = ProfileController.create;
+
     return Column(
       children: [
         Padding(
@@ -36,7 +39,7 @@ class SelfProfileTab extends StatelessWidget {
                     DefaultButton(
                       title: "Simpan Profile",
                       suffixWidget: const Icon(Icons.save),
-                      onPressed: () {},
+                      onPressed: controller.validateFormProfile,
                     )
                   ],
                 ),

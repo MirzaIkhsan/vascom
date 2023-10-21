@@ -15,9 +15,9 @@ abstract class UserServices {
         value: User(
           id: 'id',
           name: "Mirza Ikhsan",
-          email: "email",
-          ktp: "ktp",
-          phone: "phone",
+          email: "mirzaikhsan181@gmail.com",
+          ktp: "1234567891012345",
+          phone: "0888888888",
         ),
       );
     } on DioException catch (e) {

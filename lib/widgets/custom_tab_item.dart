@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:vascom/utils/text.utils.dart';
 
@@ -22,12 +23,10 @@ class CustomTabItem extends StatelessWidget {
           vertical: 7,
           horizontal: 22,
         ),
-        decoration: isActive
-            ? BoxDecoration(
-                color: const Color(0xFF00D9D5),
-                borderRadius: BorderRadius.circular(100),
-              )
-            : null,
+        decoration: BoxDecoration(
+          color: isActive ? const Color(0xFF00D9D5) : Colors.transparent,
+          borderRadius: isActive ? BorderRadius.circular(100) : null,
+        ),
         child: Center(
           child: Text(
             title,

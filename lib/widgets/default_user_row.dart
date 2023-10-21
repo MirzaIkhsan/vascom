@@ -36,7 +36,7 @@ class DefaultUserRow extends StatelessWidget {
               children: [
                 RichText(
                   text: TextSpan(
-                    text: "${user.firstName} ",
+                    text: "${user.firstName.split(" ").first} ",
                     style:
                         titleTextStyle ?? TextUtils.gilroyStyle.bold18DeepBlue,
                     children: [

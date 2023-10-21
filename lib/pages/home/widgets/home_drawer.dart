@@ -32,19 +32,21 @@ class HomeDrawer extends StatelessWidget {
             ListTile(
               title: const Text("Profile Saya"),
               trailing: const Icon(Icons.arrow_forward_ios_rounded, size: 18),
-              onTap: () {
+              onTap: () async {
                 final profileController = ProfileController.create;
                 profileController.selectedTab.value = 0;
-                Get.to(() => const ProfilePage());
+                await Get.to(() => const ProfilePage());
+                Get.delete<ProfileController>();
               },
             ),
             ListTile(
               title: const Text("Pengaturan"),
               trailing: const Icon(Icons.arrow_forward_ios_rounded, size: 18),
-              onTap: () {
+              onTap: () async {
                 final profileController = ProfileController.create;
                 profileController.selectedTab.value = 1;
-                Get.to(() => const ProfilePage());
+                await Get.to(() => const ProfilePage());
+                Get.delete<ProfileController>();
               },
             ),
             const SizedBox(height: 40),

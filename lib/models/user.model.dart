@@ -35,13 +35,31 @@ class User {
         "photo": photo,
       };
 
+  User copyWith({
+    String? id,
+    String? name,
+    String? email,
+    String? ktp,
+    String? phone,
+    String? photo,
+  }) {
+    return User(
+      id: id ?? this.id,
+      name: name ?? this.name,
+      email: email ?? this.email,
+      ktp: ktp ?? this.ktp,
+      phone: phone ?? this.phone,
+      photo: photo ?? this.photo,
+    );
+  }
+
   String get firstName {
-    return name.split(" ").first;
+    final words = name.split(" ");
+    words.removeLast();
+    return words.join(" ");
   }
 
   String? get lastName {
-    final words = name.split(" ");
-    if (words.length == 1) return words.first;
-    return words.last;
+    return name.split(" ").last;
   }
 }
