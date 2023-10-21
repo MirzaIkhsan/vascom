@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:vascom/pages/register/register_page.dart';
+import 'package:vascom/pages/login/login_page.dart';
 import 'package:vascom/utils/text.utils.dart';
 import 'package:vascom/widgets/default_text_button.dart';
 
@@ -13,13 +13,13 @@ class AlreadyHaveAccount extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          "Belum punya akun ?",
+          "Sudah punya akun ?",
           style: TextUtils.proximaNovaStyle.normal14FrenchGrey,
         ),
         const SizedBox(width: 8),
         DefaultTextButton(
-          title: "Daftar Sekarang",
-          onTap: () => Get.off(() => const RegisterPage()),
+          title: "Login Sekarang",
+          onTap: () => Get.off(() => const LoginPage()),
         ),
       ],
     );

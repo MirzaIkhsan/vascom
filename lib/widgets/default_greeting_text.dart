@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:vascom/utils/text.utils.dart';
 
-class GreetingText extends StatelessWidget {
-  const GreetingText({super.key});
+class DefaultGreetingText extends StatelessWidget {
+  const DefaultGreetingText({super.key});
 
   @override
   Widget build(BuildContext context) {

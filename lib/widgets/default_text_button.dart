@@ -6,24 +6,34 @@ class DefaultTextButton extends StatelessWidget {
     super.key,
     required this.title,
     this.textStyle,
+    this.suffixWidget,
     this.onTap,
   });
 
   final String title;
   final TextStyle? textStyle;
+  final Widget? suffixWidget;
   final Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.all(4),
-        color: Colors.transparent,
-        child: Text(
-          title,
-          style: textStyle ?? TextUtils.proximaNovaStyle.semiBold14DeepBlue,
-        ),
+      child: Row(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(4),
+            color: Colors.transparent,
+            child: Text(
+              title,
+              style: textStyle ?? TextUtils.proximaNovaStyle.semiBold14DeepBlue,
+            ),
+          ),
+          if (suffixWidget != null) ...[
+            const SizedBox(width: 4),
+            suffixWidget!,
+          ]
+        ],
       ),
     );
   }

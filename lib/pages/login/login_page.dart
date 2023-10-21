@@ -4,9 +4,10 @@ import 'package:get/get.dart';
 import 'package:vascom/pages/login/login_controller.dart';
 import 'package:vascom/pages/login/widget/already_have_account.dart';
 import 'package:vascom/pages/login/widget/form_login.dart';
-import 'package:vascom/pages/login/widget/greeting_text.dart';
 import 'package:vascom/utils/text.utils.dart';
 import 'package:vascom/widgets/default_button.dart';
+import 'package:vascom/widgets/default_copyrigth.dart';
+import 'package:vascom/widgets/default_greeting_text.dart';
 import 'package:vascom/widgets/default_scaffold.dart';
 
 class LoginPage extends StatelessWidget {
@@ -23,7 +24,7 @@ class LoginPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const GreetingText(),
+            const DefaultGreetingText(),
             const SizedBox(height: 4),
             Text(
               "Silahkan login untuk melanjutkan",
@@ -37,7 +38,7 @@ class LoginPage extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            FormRegistration(
+            FormLogin(
               isFilled: (value) => controller.isButtonActive.value = value,
             ),
             const SizedBox(height: 40),
@@ -46,12 +47,14 @@ class LoginPage extends StatelessWidget {
                 title: "Login",
                 suffixWidget: const Icon(Icons.arrow_forward),
                 onPressed: controller.isButtonActive.isTrue
-                    ? controller.validateFormRegistration
+                    ? controller.validateFormLogin
                     : null,
               );
             }),
             const SizedBox(height: 40),
             const AlreadyHaveAccount(),
+            const SizedBox(height: 40),
+            const DefaultCopyright(),
           ],
         ),
       ),

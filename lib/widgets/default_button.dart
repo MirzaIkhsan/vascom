@@ -11,6 +11,7 @@ class DefaultButton extends StatelessWidget {
     this.prefixWidget,
     this.suffixWidget,
     this.textStyle,
+    this.color,
   });
 
   final Function()? onPressed;
@@ -19,6 +20,7 @@ class DefaultButton extends StatelessWidget {
   final Widget? prefixWidget;
   final Widget? suffixWidget;
   final TextStyle? textStyle;
+  final Color? color;
 
   @override
   Widget build(BuildContext context) {
@@ -31,19 +33,23 @@ class DefaultButton extends StatelessWidget {
           splashFactory: NoSplash.splashFactory,
           shadowColor: ColorUtils.deepblue.withOpacity(0.6),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-          backgroundColor: ColorUtils.deepblue,
+          backgroundColor: color ?? ColorUtils.deepblue,
         ),
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 12),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: (prefixWidget != null || suffixWidget != null)
+                ? MainAxisAlignment.spaceBetween
+                : MainAxisAlignment.center,
             children: [
-              SizedBox(width: 24, child: prefixWidget),
+              if (prefixWidget != null || suffixWidget != null)
+                SizedBox(width: 24, child: prefixWidget),
               Text(
                 title,
                 style: textStyle ?? TextUtils.gilroyStyle.semiBold16White,
               ),
-              SizedBox(width: 24, child: suffixWidget),
+              if (prefixWidget != null || suffixWidget != null)
+                SizedBox(width: 24, child: suffixWidget),
             ],
           ),
         ),

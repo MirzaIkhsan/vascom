@@ -10,6 +10,7 @@ class DefaultTextFormField extends StatefulWidget {
     this.hint,
     this.isObsecure = false,
     this.validator,
+    this.textInputType,
   })  : named = null,
         suffixNamed = null;
 
@@ -21,6 +22,7 @@ class DefaultTextFormField extends StatefulWidget {
     this.hint,
     this.isObsecure = false,
     this.validator,
+    this.textInputType,
   });
 
   final TextEditingController controller;
@@ -29,6 +31,7 @@ class DefaultTextFormField extends StatefulWidget {
   final String? hint;
   final bool isObsecure;
   final String? Function(String?)? validator;
+  final TextInputType? textInputType;
 
   @override
   State<DefaultTextFormField> createState() => _DefaultTextFormFieldState();
@@ -64,6 +67,7 @@ class _DefaultTextFormFieldState extends State<DefaultTextFormField> {
           cursorColor: Colors.black,
           obscureText: obsecure,
           validator: widget.validator,
+          keyboardType: widget.textInputType,
           decoration: InputDecoration(
             fillColor: Colors.white,
             filled: true,

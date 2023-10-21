@@ -11,6 +11,118 @@ abstract class TextUtils {
 class _ProximaNovaStyle {
   static const _fontFamily = "ProximaNova";
 
+  TextStyle get normal12WikawaGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 12,
+        color: ColorUtils.wikawaGrey,
+        fontWeight: FontWeight.w400,
+      );
+
+  TextStyle get medium12WikawaGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 12,
+        color: ColorUtils.wikawaGrey,
+        fontWeight: FontWeight.w500,
+      );
+
+  TextStyle get semiBold12WikawaGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 12,
+        color: ColorUtils.wikawaGrey,
+        fontWeight: FontWeight.w600,
+      );
+
+  TextStyle get bold12WikawaGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 12,
+        color: ColorUtils.wikawaGrey,
+        fontWeight: FontWeight.w700,
+      );
+
+  TextStyle get normal14White => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 14,
+        color: Colors.white,
+        fontWeight: FontWeight.w400,
+      );
+
+  TextStyle get medium14White => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 14,
+        color: Colors.white,
+        fontWeight: FontWeight.w500,
+      );
+
+  TextStyle get semiBold14White => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 14,
+        color: Colors.white,
+        fontWeight: FontWeight.w600,
+      );
+
+  TextStyle get bold14White => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 14,
+        color: Colors.white,
+        fontWeight: FontWeight.w700,
+      );
+
+  TextStyle get normal14WikawaGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 14,
+        color: ColorUtils.wikawaGrey,
+        fontWeight: FontWeight.w400,
+      );
+
+  TextStyle get medium14WikawaGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 14,
+        color: ColorUtils.wikawaGrey,
+        fontWeight: FontWeight.w500,
+      );
+
+  TextStyle get semiBold14WikawaGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 14,
+        color: ColorUtils.wikawaGrey,
+        fontWeight: FontWeight.w600,
+      );
+
+  TextStyle get bold14WikawaGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 14,
+        color: ColorUtils.wikawaGrey,
+        fontWeight: FontWeight.w700,
+      );
+
+  TextStyle get normal12FrenchGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 12,
+        color: ColorUtils.frenchGrey,
+        fontWeight: FontWeight.w400,
+      );
+
+  TextStyle get medium12FrenchGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 12,
+        color: ColorUtils.frenchGrey,
+        fontWeight: FontWeight.w500,
+      );
+
+  TextStyle get semiBold12FrenchGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 12,
+        color: ColorUtils.frenchGrey,
+        fontWeight: FontWeight.w600,
+      );
+
+  TextStyle get bold12FrenchGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 12,
+        color: ColorUtils.frenchGrey,
+        fontWeight: FontWeight.w700,
+      );
+
   TextStyle get normal14FrenchGrey => const TextStyle(
         fontFamily: _fontFamily,
         fontSize: 14,
@@ -39,7 +151,7 @@ class _ProximaNovaStyle {
         fontWeight: FontWeight.w700,
       );
 
-      TextStyle get normal14DeepBlue => const TextStyle(
+  TextStyle get normal14DeepBlue => const TextStyle(
         fontFamily: _fontFamily,
         fontSize: 14,
         color: ColorUtils.deepblue,
@@ -63,6 +175,34 @@ class _ProximaNovaStyle {
   TextStyle get bold14DeepBlue => const TextStyle(
         fontFamily: _fontFamily,
         fontSize: 14,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w700,
+      );
+
+  TextStyle get normal18DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 18,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w400,
+      );
+
+  TextStyle get medium18DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 18,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w500,
+      );
+
+  TextStyle get semiBold18DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 18,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w600,
+      );
+
+  TextStyle get bold18DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 18,
         color: ColorUtils.deepblue,
         fontWeight: FontWeight.w700,
       );
@@ -155,6 +295,62 @@ class _GilroyStyle {
         fontWeight: FontWeight.w700,
       );
 
+  TextStyle get normal22White => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 22,
+        color: Colors.white,
+        fontWeight: FontWeight.w400,
+      );
+
+  TextStyle get medium22White => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 22,
+        color: Colors.white,
+        fontWeight: FontWeight.w500,
+      );
+
+  TextStyle get semiBold22White => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 22,
+        color: Colors.white,
+        fontWeight: FontWeight.w600,
+      );
+
+  TextStyle get bold22White => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 22,
+        color: Colors.white,
+        fontWeight: FontWeight.w700,
+      );
+
+  TextStyle get normal28White => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 28,
+        color: Colors.white,
+        fontWeight: FontWeight.w400,
+      );
+
+  TextStyle get medium28White => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 28,
+        color: Colors.white,
+        fontWeight: FontWeight.w500,
+      );
+
+  TextStyle get semiBold28White => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 28,
+        color: Colors.white,
+        fontWeight: FontWeight.w600,
+      );
+
+  TextStyle get bold28White => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 28,
+        color: Colors.white,
+        fontWeight: FontWeight.w700,
+      );
+
   TextStyle get normal28NileBlue => const TextStyle(
         fontFamily: _fontFamily,
         fontSize: 28,
@@ -180,6 +376,90 @@ class _GilroyStyle {
         fontFamily: _fontFamily,
         fontSize: 28,
         color: ColorUtils.nileBlue,
+        fontWeight: FontWeight.w700,
+      );
+
+  TextStyle get normal16DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 16,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w400,
+      );
+
+  TextStyle get medium16DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 16,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w500,
+      );
+
+  TextStyle get semiBold16DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 16,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w600,
+      );
+
+  TextStyle get bold16DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 16,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w700,
+      );
+
+  TextStyle get normal18DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 18,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w400,
+      );
+
+  TextStyle get medium18DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 18,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w500,
+      );
+
+  TextStyle get semiBold18DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 18,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w600,
+      );
+
+  TextStyle get bold18DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 18,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w700,
+      );
+
+  TextStyle get normal20DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 20,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w400,
+      );
+
+  TextStyle get medium20DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 20,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w500,
+      );
+
+  TextStyle get semiBold20DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 20,
+        color: ColorUtils.deepblue,
+        fontWeight: FontWeight.w600,
+      );
+
+  TextStyle get bold20DeepBlue => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 20,
+        color: ColorUtils.deepblue,
         fontWeight: FontWeight.w700,
       );
 

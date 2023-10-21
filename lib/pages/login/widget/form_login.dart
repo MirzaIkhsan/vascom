@@ -3,8 +3,8 @@ import 'package:vascom/pages/login/login_controller.dart';
 import 'package:vascom/utils/validator.utils.dart';
 import 'package:vascom/widgets/default_text_form_field.dart';
 
-class FormRegistration extends StatelessWidget {
-  const FormRegistration({
+class FormLogin extends StatelessWidget {
+  const FormLogin({
     super.key,
     this.isFilled,
   });
