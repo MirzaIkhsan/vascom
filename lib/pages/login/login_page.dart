@@ -20,42 +20,46 @@ class LoginPage extends StatelessWidget {
     return DefaultScaffold(
       body: SafeArea(
         minimum: const EdgeInsets.symmetric(horizontal: 16),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const DefaultGreetingText(),
-            const SizedBox(height: 4),
-            Text(
-              "Silahkan login untuk melanjutkan",
-              style: TextUtils.proximaNovaStyle.semiBold12PaleBlue,
-            ),
-            Align(
-              alignment: Alignment.centerRight.add(const Alignment(0.5, 0)),
-              child: SvgPicture.asset(
-                "assets/svgs/riwayat_medis_anda_web.svg",
-                width: 331,
-                fit: BoxFit.cover,
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const SizedBox(height: 40),
+              const DefaultGreetingText(),
+              const SizedBox(height: 4),
+              Text(
+                "Silahkan login untuk melanjutkan",
+                style: TextUtils.proximaNovaStyle.semiBold12PaleBlue,
               ),
-            ),
-            FormLogin(
-              isFilled: (value) => controller.isButtonActive.value = value,
-            ),
-            const SizedBox(height: 40),
-            Obx(() {
-              return DefaultButton(
-                title: "Login",
-                suffixWidget: const Icon(Icons.arrow_forward),
-                onPressed: controller.isButtonActive.isTrue
-                    ? controller.validateFormLogin
-                    : null,
-              );
-            }),
-            const SizedBox(height: 40),
-            const AlreadyHaveAccount(),
-            const SizedBox(height: 40),
-            const DefaultCopyright(),
-          ],
+              Align(
+                alignment: Alignment.centerRight.add(const Alignment(0.5, 0)),
+                child: SvgPicture.asset(
+                  "assets/svgs/riwayat_medis_anda_web.svg",
+                  width: 331,
+                  fit: BoxFit.cover,
+                ),
+              ),
+              FormLogin(
+                isFilled: (value) => controller.isButtonActive.value = value,
+              ),
+              const SizedBox(height: 40),
+              Obx(() {
+                return DefaultButton(
+                  title: "Login",
+                  suffixWidget: const Icon(Icons.arrow_forward),
+                  onPressed: controller.isButtonActive.isTrue
+                      ? controller.validateFormLogin
+                      : null,
+                );
+              }),
+              const SizedBox(height: 40),
+              const AlreadyHaveAccount(),
+              const SizedBox(height: 40),
+              const DefaultCopyright(),
+              const SizedBox(height: 40),
+            ],
+          ),
         ),
       ),
     );
