@@ -11,7 +11,7 @@ This project is for recruitment purpose only
 ## Simulate login
 To simulate login, you will need these information:
 - email: eve.holt@reqres.in
-- password: anything random with minimum charater of 8
+- password: any random character with length of 8
 
 # Simulate register
 To simulate register, you will need these information:
