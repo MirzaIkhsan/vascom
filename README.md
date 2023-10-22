@@ -13,7 +13,7 @@ To simulate login, you will need these information:
 - email: eve.holt@reqres.in
 - password: any random character with length of 8
 
-# Simulate register
+## Simulate register
 To simulate register, you will need these information:
 - first name: anything random
 - last name: anything random
