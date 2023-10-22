@@ -151,6 +151,34 @@ class _ProximaNovaStyle {
         fontWeight: FontWeight.w700,
       );
 
+  TextStyle get normal18FrenchGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 18,
+        color: ColorUtils.frenchGrey,
+        fontWeight: FontWeight.w400,
+      );
+
+  TextStyle get medium18FrenchGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 18,
+        color: ColorUtils.frenchGrey,
+        fontWeight: FontWeight.w500,
+      );
+
+  TextStyle get semiBold18FrenchGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 18,
+        color: ColorUtils.frenchGrey,
+        fontWeight: FontWeight.w600,
+      );
+
+  TextStyle get bold18FrenchGrey => const TextStyle(
+        fontFamily: _fontFamily,
+        fontSize: 18,
+        color: ColorUtils.frenchGrey,
+        fontWeight: FontWeight.w700,
+      );
+
   TextStyle get normal14DeepBlue => const TextStyle(
         fontFamily: _fontFamily,
         fontSize: 14,

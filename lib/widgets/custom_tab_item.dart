@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:vascom/utils/text.utils.dart';
 
 class CustomTabItem extends StatelessWidget {
